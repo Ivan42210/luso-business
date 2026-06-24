@@ -1,12 +1,14 @@
 
 import { Link, NavLink } from 'react-router-dom';
 import { formations } from '../data/formations';
+import HeroImage from '../assets/Photos/hero.png';
+import './Home.css';
 
 const HeroSection = () => {
   const badgeText = "Organisme de formation certifié Qualiopi";
   const title = "Formations professionnelles qui font la différence";
   const subtitle = "Découvrez comment nos formations peuvent transformer votre entreprise.";
-  const imageSrc = "/Photos/hero.png";
+  const imageSrc = HeroImage;
 
   return (
     <section className="bg-white py-16">
@@ -22,7 +24,7 @@ const HeroSection = () => {
           <h1 className="text-3xl font-bold text-[#4A6FB3]">{title}</h1>
           <p className="text-gray-500 mt-2">{subtitle}</p>
         </div>
-        <img src={imageSrc} alt="Hero" className="hidden md:block h-96 rounded-2xl" />
+        <img src={imageSrc} alt="Hero" className="hidden md:block h-96 rounded-2xl hero_img" />
       </div>
     </section>
   );
@@ -139,19 +141,19 @@ const WhyUsSection = () => {
 
         <div className="grid grid-cols-4 gap-4 mt-8">
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            <span>01</span>
+          
             <p className="ml-2 text-gray-700">Analyse</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            <span>02</span>
+            
             <p className="ml-2 text-gray-700">Proposition</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            <span>03</span>
+            
             <p className="ml-2 text-gray-700">Réalisation</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            <span>04</span>
+           
             <p className="ml-2 text-gray-700">Suivi & Évaluation</p>
           </div>
         </div>

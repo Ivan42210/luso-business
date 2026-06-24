@@ -6,7 +6,7 @@ export const formations = [
     titre: 'FLE',
     sousTitre: 'Français Langue Étrangère',
     description: 'Développez les compétences en français de vos équipes.',
-    image: '/Photos/formations/fle.jpg',
+    image: 'src\\assets\\Photos\\FLE.png',
     pdf: '/PDFs/formations/PF-FLE_VERSION_2026.pdf',
     type: 'pdf'
   },
@@ -17,8 +17,8 @@ export const formations = [
     titre: 'Portugais',
     sousTitre: 'Professionnel',
     description: 'Des formations adaptées à vos besoins métier.',
-    image: '/Photos/formations/portugais.jpg',
-    pdf: '/PDFs/formations/PF-Portugais_VERSION_2026.pdf',
+    image: 'src\\assets\\Photos\\portugais.jpg',
+    pdf: 'src\\assets\\PDFs\\formations\\PF-Portugais_VERSION_2026.pdf',
     type: 'pdf'
   },
   {
@@ -28,7 +28,7 @@ export const formations = [
     titre: 'DUERP',
     sousTitre: 'Document Unique',
     description: 'Évaluez et prévenez les risques dans votre entreprise.',
-    image: '/Photos/formations/duerp.jpg',
+    image: 'src\\assets\\Photos\\duerp.jpg',
     pdf: null,
     type: 'pdf'
   },
