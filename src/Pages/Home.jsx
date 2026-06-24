@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { formations } from '../data/formations';
 import HeroImage from '../assets/Photos/hero.png';
 import './Home.css';
+import { Monitor, Users, Heart, Star, Check } from "lucide-react";
+
 
 const HeroSection = () => {
   const badgeText = "Organisme de formation certifié Qualiopi";
@@ -22,7 +24,7 @@ const HeroSection = () => {
             ))}
           </span>
           <h1 className="text-3xl font-bold text-[#4A6FB3]">{title}</h1>
-          <p className="text-gray-500 mt-2">{subtitle}</p>
+          <p className="text-[#4A6FB3] mt-2">{subtitle}</p>
         </div>
         <img src={imageSrc} alt="Hero" className="hidden md:block h-96 rounded-2xl hero_img" />
       </div>
@@ -32,10 +34,10 @@ const HeroSection = () => {
 
 const StatsSection = () => {
   const stats = [
-    { icon: '/Icons/screen.svg', label: '1700+', description: 'Heures de formations réalisées' },
-    { icon: '/Icons/users.svg', label: '55', description: 'Stagiaires formés' },
-    { icon: '/Icons/heart.svg', label: '10/10', description: 'Satisfaction client' },
-    { icon: '/Icons/star.svg', label: '10/10', description: 'Satisfaction stagiaire' }
+    { label: '1700+', description: 'Heures de formations réalisées' },
+    { label: '55', description: 'Stagiaires formés' },
+    { label: '10/10', description: 'Satisfaction client' },
+    { label: '10/10', description: 'Satisfaction stagiaire' }
   ];
 
   return (
@@ -43,7 +45,10 @@ const StatsSection = () => {
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
           <div key={index} className="flex items-center justify-center bg-[#4A6FB3]/10 rounded-full p-4">
-            <img src={stat.icon} alt={stat.label} className="w-5 h-5" />
+            {index === 0 && <Monitor size={24} color="#4A6FB3" />}
+            {index === 1 && <Users size={24} color="#4A6FB3" />}
+            {index === 2 && <Heart size={24} color="#4A6FB3" />}
+            {index === 3 && <Star size={24} color="#4A6FB3" />}
             <div className="ml-2">
               <p className="text-xl font-bold">{stat.label}</p>
               <p className="text-gray-500">{stat.description}</p>
@@ -54,6 +59,7 @@ const StatsSection = () => {
     </section>
   );
 };
+
 
 const FormationsSection = () => {
   const supertitle = "TOUTES NOS EXPERTISES";
@@ -111,12 +117,12 @@ const WhyUsSection = () => {
   const supertitle = "POURQUOI NOUS CHOISIR";
   const title = "Un partenaire de confiance pour vos formations";
   const reasons = [
-    { icon: '/Icons/expertise.svg', label: 'Expertise reconnue' },
-    { icon: '/Icons/custom-formations.svg', label: 'Formations sur mesure' },
-    { icon: '/Icons/comprehensive-support.svg', label: 'Accompagnement complet' },
-    { icon: '/Icons/easy-financing.svg', label: 'Financement facilité' }
+    { label: 'Expertise reconnue' },
+    { label: 'Formations sur mesure' },
+    { label: 'Accompagnement complet' },
+    { label: 'Financement facilité' }
   ];
-  const imageSrc = "/Photos/why-us.png";
+  const imageSrc = "src\\assets\\Photos\\pourquoi nous.png";
 
   return (
     <section className="bg-white py-16">
@@ -127,7 +133,7 @@ const WhyUsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
           {reasons.map((reason, index) => (
             <div key={index} className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-              <img src={reason.icon} alt={reason.label} className="w-5 h-5" />
+              <Check className="w-5 h-5 text-[#4A6FB3]" />
               <p className="ml-2 text-gray-700">{reason.label}</p>
             </div>
           ))}
@@ -141,19 +147,19 @@ const WhyUsSection = () => {
 
         <div className="grid grid-cols-4 gap-4 mt-8">
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-          
+            <Check className="w-5 h-5 text-[#4A6FB3]" />
             <p className="ml-2 text-gray-700">Analyse</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            
+            <Check className="w-5 h-5 text-[#4A6FB3]" />
             <p className="ml-2 text-gray-700">Proposition</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-            
+            <Check className="w-5 h-5 text-[#4A6FB3]" />
             <p className="ml-2 text-gray-700">Réalisation</p>
           </div>
           <div className="bg-[#4A6FB3]/10 rounded-lg p-4 flex items-center justify-center">
-           
+            <Check className="w-5 h-5 text-[#4A6FB3]" />
             <p className="ml-2 text-gray-700">Suivi & Évaluation</p>
           </div>
         </div>
@@ -161,6 +167,7 @@ const WhyUsSection = () => {
     </section>
   );
 };
+
 
 const TestimonialsSection = () => {
   const supertitle = "ILS NOUS FONT CONFIANCE";
@@ -172,7 +179,7 @@ const TestimonialsSection = () => {
         <p className="text-[#4A6FB3] uppercase font-bold mb-2">{supertitle}</p>
         <h2 className="text-3xl font-bold mb-8">{title}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           {[1, 2, 3].map((index) => (
             <div key={index} className="bg-white rounded-lg p-6 text-center shadow-md">
               <img src="/Icons/star-yellow.svg" alt="Star" className="w-10 h-10 mx-auto mb-4" />
@@ -201,7 +208,8 @@ const PartnersSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {checkmarks.map((checkmark, index) => (
-            <div key={index} className="bg-[#F5F7FA] rounded-lg p-4 text-center shadow-md">
+            <div key={index} className="bg-[#F5F7FA] rounded-lg p-4 text-center shadow-md flex items-center justify-center gap-2">
+              <Check className="w-5 h-5 text-[#4A6FB3]" />
               <p>{checkmark}</p>
             </div>
           ))}
@@ -213,6 +221,8 @@ const PartnersSection = () => {
   );
 };
 
+
+
 const CtaSection = () => {
   const title = "Prêt à faire monter en compétences vos équipes ?";
   const subtitle = "Obtenez votre devis personnalisé en moins de 24h.";
@@ -221,7 +231,7 @@ const CtaSection = () => {
     <section className="bg-[#4A6FB3] py-16">
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center text-white">
         <div>
-          <h2 className="text-3xl font-bold mb-2">{title}</h2>
+          <h2 className="text-3xl font-bold mb-2 text-[#F5F7FA]">{title}</h2>
           <p className="text-lg mb-4">{subtitle}</p>
         </div>
         <button as={Link} to="/contact" className="bg-white text-[#4A6FB3] px-4 py-2 rounded-lg">Demander un devis →</button>

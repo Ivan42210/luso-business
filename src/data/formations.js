@@ -28,7 +28,7 @@ export const formations = [
     titre: 'DUERP',
     sousTitre: 'Document Unique',
     description: 'Évaluez et prévenez les risques dans votre entreprise.',
-    image: 'src\\assets\\Photos\\duerp.jpg',
+    image: 'src\\assets\\Photos\\DUERP.png',
     pdf: null,
     type: 'pdf'
   },
@@ -39,7 +39,7 @@ export const formations = [
     titre: 'RGPD',
     sousTitre: 'Protection des données',
     description: 'Mettez votre entreprise en conformité avec le RGPD.',
-    image: '/Photos/formations/rgpd.jpg',
+    image: 'src\\assets\\Photos\\RGPD.png',
     pdf: '/PDFs/formations/PF_RGPD_VERSION_2026.pdf',
     type: 'pdf'
   },
@@ -50,8 +50,8 @@ export const formations = [
     titre: 'Management & Leadership',
     sousTitre: '',
     description: 'Développez vos managers et vos équipes.',
-    image: '/Photos/formations/management.jpg',
-    pdf: '/PDFs/formations/MANAGEMENT-niveau-1-E.pdf',
+    image: 'src\\assets\\Photos\\management.png',
+    pdf: '/PDFs/formations/PF-MANAGEMENT_VERSION_2026.pdf',
     type: 'pdf'
   },
   {
@@ -61,7 +61,7 @@ export const formations = [
     titre: 'FLE en milieu sportif',
     sousTitre: '',
     description: 'Des formations spécifiques pour le secteur sportif.',
-    image: '/Photos/formations/fle-sportif.jpg',
+    image: 'src\\assets\\Photos\\fle-football.png',
     pdf: '/PDFs/formations/FLE-FOOT.pdf',
     type: 'pdf'
   },
@@ -72,7 +72,7 @@ export const formations = [
     titre: 'Formations DIVALTO',
     sousTitre: '',
     description: 'Des parcours spécialisés pour vos projets Divalto ERP.',
-    image: '/Photos/formations/divalto.jpg',
+    image: 'src\\assets\\Photos\\divalto.png',
     pdf: null,
     type: 'page'
   }
