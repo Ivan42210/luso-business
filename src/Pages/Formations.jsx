@@ -45,7 +45,7 @@ const Formations = () => {
 
   return (
     <>
-      <section className="bg-white py-16">
+      <section className="bg-white py-5">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <nav aria-label="breadcrumb" className="mb-8">
             <ol className="list-none p-0 m-0 inline-flex space-x-4">
@@ -55,8 +55,7 @@ const Formations = () => {
               <li aria-current="page" className="text-gray-500">Nos formations</li>
             </ol>
           </nav>
-          <h2 className="text-3xl font-bold mb-4">Nos formations</h2>
-          <p className="text-gray-500 mb-8">Découvrez nos formations adaptées à vos besoins.</p>
+         
         </div>
       </section>
 
