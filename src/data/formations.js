@@ -51,7 +51,7 @@ export const formations = [
     sousTitre: '',
     description: 'Développez vos managers et vos équipes.',
     image: 'src\\assets\\Photos\\management.png',
-    pdf: '/PDFs/formations/PF-MANAGEMENT_VERSION_2026.pdf',
+    pdf: 'src\\assets\\PDFs\\MANAGEMENT-niveau-1-EXPERT.pdf',
     type: 'pdf'
   },
   {

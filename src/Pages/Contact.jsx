@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
   const [nom, setNom] = useState('');
@@ -91,23 +92,31 @@ const Contact = () => {
           <div className="flex-1">
             <h2 className="text-xl font-bold mb-4">Nos coordonnées</h2>
             <div className="flex items-center space-x-4 mb-4">
-              <img src="/Icons/address.svg" alt="Adresse" className="w-5 h-5 text-[#4A6FB3]" />
-              <p>123 Rue de l'Entreprise, Ville</p>
+              <MapPin className="w-5 h-5 text-[#4A6FB3]" />
+              <p>2 allée Giaccomo Puccini, 42000 Saint-Etienne</p>
             </div>
             <div className="flex items-center space-x-4 mb-4">
-              <img src="/Icons/phone.svg" alt="Téléphone" className="w-5 h-5 text-[#4A6FB3]" />
-              <p>01 23 45 67 89</p>
+              <Phone className="w-5 h-5 text-[#4A6FB3]" />
+              <p>06 07 09 36 71</p>
             </div>
             <div className="flex items-center space-x-4 mb-4">
-              <img src="/Icons/email.svg" alt="Email" className="w-5 h-5 text-[#4A6FB3]" />
-              <p>contact@luso-business.com</p>
+              <Mail className="w-5 h-5 text-[#4A6FB3]" />
+              <p>contact@luso-business.fr</p>
             </div>
             <div className="flex items-center space-x-4 mb-4">
-              <img src="/Icons/hours.svg" alt="Horaires" className="w-5 h-5 text-[#4A6FB3]" />
+              <Clock className="w-5 h-5 text-[#4A6FB3]" />
               <p>Lun. - Ven. 9h - 18h</p>
             </div>
-            <div className="mt-6 bg-gray-200 rounded-xl h-52 flex items-center justify-center">
-              <p>Carte Google Maps</p>
+            <div className="mt-6 rounded-xl overflow-hidden h-52">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5595.8779708365855!2d4.395129!3d45.471033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5ad10c7230173%3A0x8ca8d6332e17f38a!2sLuso-Business!5e0!3m2!1sfr!2sus!4v1782285595679!5m2!1sfr!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
             </div>
           </div>
         </div>

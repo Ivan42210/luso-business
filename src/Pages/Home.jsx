@@ -231,7 +231,7 @@ const CtaSection = () => {
     <section className="bg-[#4A6FB3] py-16">
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center text-white">
         <div>
-          <h2 className="text-3xl font-bold mb-2 text-[#F5F7FA]">{title}</h2>
+          <h2 className="text-3xl font-bold mb-2">{title}</h2>
           <p className="text-lg mb-4">{subtitle}</p>
         </div>
         <button as={Link} to="/contact" className="bg-white text-[#4A6FB3] px-4 py-2 rounded-lg">Demander un devis →</button>
