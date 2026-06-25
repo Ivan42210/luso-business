@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Breadcrumb, CtaSection } from '../components/common';
 
 const Contact = () => {
   const [nom, setNom] = useState('');
@@ -24,14 +24,7 @@ const Contact = () => {
     <>
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <nav aria-label="breadcrumb" className="mb-8">
-            <ol className="list-none p-0 m-0 inline-flex space-x-4">
-              <li>
-                <Link to="/" className="text-[#1A1A1A] hover:text-[#4A6FB3]">Accueil</Link>
-              </li>
-              <li aria-current="page" className="text-gray-500">Contact</li>
-            </ol>
-          </nav>
+          <Breadcrumb currentPage="Contact" />
           <h1 className="text-3xl font-bold mb-4">Contactez-nous</h1>
           <p className="text-gray-500 mb-8">Notre équipe est à votre écoute pour répondre à toutes vos questions.</p>
         </div>
@@ -122,16 +115,15 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="bg-[#2F4F8F] py-12">
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-          <div>
-            <p className="text-white">Besoin d'un devis rapide ? Obtenez une réponse en 24h.</p>
-          </div>
-          <button onClick={() => window.scrollTo(0,0)} className="bg-white text-[#2F4F8F] font-semibold px-6 py-3 rounded-lg">
-            Demander un devis →
-          </button>
-        </div>
-      </section>
+      <CtaSection
+        title="Besoin d'un devis rapide ?"
+        subtitle="Contactez-nous pour un devis personnalisé."
+        buttonText="Demander un devis →"
+        buttonLink="/contact"
+        bgColor="bg-[#2F4F8F]"
+        textColor="text-white"
+        buttonClasses="bg-white text-[#2F4F8F] font-semibold px-6 py-3"
+      />
     </>
   );
 };

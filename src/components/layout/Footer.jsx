@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
-import Logo from '../assets/Photos/logo-luso-business.png';
+import Logo from '../../assets/Photos/logo-luso-business.png';
 
 const Footer = () => {
   const socialIcons = [
