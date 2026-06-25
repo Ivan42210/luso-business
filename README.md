@@ -28,7 +28,7 @@ Ce projet utilise React, Vite et Tailwind CSS pour la création d'une applicatio
 
 1. Clonez le dépôt sur votre machine :
    ```bash
-   git clone https://github.com/your-repo/luso-business.git
+   git clone https://github.com/Ivan42210/luso-business.git
    cd luso-business
    ```
 
