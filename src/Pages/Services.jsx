@@ -1,27 +1,15 @@
+import { Breadcrumb, CtaSection } from '../components/common';
+import { ServiceCategoryCard } from '../components/services';
+import { serviceCategories } from '../data/services';
 import {
-  Pencil,
-  Users,
-  Monitor,
-  ClipboardCheck,
-  Lightbulb,
-  FileText,
   Check
 } from 'lucide-react';
-import { Breadcrumb, CtaSection } from '../components/common';
 import imgServices from '../assets/Photos/services.png';
 
 const Services = () => {
-  const services = [
-    { icon: Pencil, title: 'Formations sur mesure', description: 'Adaptées à vos besoins spécifiques.' },
-    { icon: Users, title: 'Formations en présentiel', description: 'Adaptées à vos besoins spécifiques.' },
-    { icon: Monitor, title: 'Formations à distance', description: 'Adaptées à vos besoins spécifiques.' },
-    { icon: ClipboardCheck, title: 'Bilan de compétences', description: 'Analyse et suivi des progrès.' },
-    { icon: Lightbulb, title: 'Conseil en formation', description: 'Expertise pour une formation optimale.' },
-    { icon: FileText, title: 'Gestion OPCO', description: 'Suivi et gestion des formations.' }
-  ];
-
   return (
     <>
+      {/* Breadcrumb et en-tête */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <Breadcrumb currentPage="Services" />
@@ -30,27 +18,20 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Grille des catégories de services */}
       <section className="bg-[#F5F7FA] py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-[#4A6FB3] uppercase mb-8 font-bold">Ce que nous proposons</h2>
-          <h3 className="text-3xl font-bold mb-4">Des formations pour chaque situation</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-10 h-10 bg-[#4A6FB3]/10 rounded-lg mb-4 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-[#4A6FB3]" />
-                  </div>
-                  <h3 className="font-bold text-[#1A1A1A] mb-2">{service.title}</h3>
-                  <p className="text-sm text-gray-500">{service.description}</p>
-                </div>
-              );
-            })}
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-[#4A6FB3] uppercase text-center font-bold mb-2">Ce que nous proposons</h2>
+          <h3 className="text-3xl font-bold text-center mb-8">Des prestations pour chaque besoin</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {serviceCategories.map((category) => (
+              <ServiceCategoryCard key={category.id} category={category} />
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Section "Pourquoi choisir nos services ?" (inchangée) */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2">
@@ -70,6 +51,7 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Section "Comment ça marche ?" (inchangée) */}
       <section className="bg-[#F5F7FA] py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Comment ça marche ?</h2>
@@ -99,6 +81,7 @@ const Services = () => {
         </div>
       </section>
 
+      {/* CTA (inchangé) */}
       <CtaSection
         title="Prêt à développer les compétences de vos équipes ?"
         subtitle="Obtenez votre devis personnalisé en moins de 24h."

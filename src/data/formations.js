@@ -6,6 +6,12 @@ import rgpdImage from '../assets/Photos/RGPD.png';
 import managementImage from '../assets/Photos/management.png';
 import fleSportifImage from '../assets/Photos/fle-football.png';
 import divaltoImage from '../assets/Photos/divalto.png';
+import divaltoAchatImg from '../assets/Photos/DIVALTO-achat.png';
+import divaltoVenteImg from '../assets/Photos/DIVALTO-vente.png';
+import divaltoGrmImg from '../assets/Photos/DIVALTO-GRM-GMAO.png';
+import divaltoLogistiqueImg from '../assets/Photos/DIVALTO-logistique.png';
+import divaltoProductionImg from '../assets/Photos/DIVALTO-production.png';
+import divaltoQualiteImg from '../assets/Photos/DIVALTO-qualite.png';
 
 // Imports des PDFs – Chemins CORRECTS (sans sous-dossier)
 import flePdf from '../assets/PDFs/PF-FLE_VERSION_2026.pdf';
@@ -106,7 +112,7 @@ export const formations = [
     titre: 'DIVALTO Achat',
     sousTitre: 'Module Achat',
     description: 'Maîtrisez les fonctionnalités du module Achat de DIVALTO.',
-    image: divaltoImage, // Utilisez une image existante ou créez-en une
+    image: divaltoAchatImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoAchatPdf,
     type: 'pdf'
   },
@@ -117,7 +123,7 @@ export const formations = [
     titre: 'DIVALTO Vente',
     sousTitre: 'Module Vente',
     description: 'Optimisez votre processus de vente avec DIVALTO.',
-    image: divaltoImage,
+    image: divaltoVenteImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoVentePdf,
     type: 'pdf'
   },
@@ -128,7 +134,7 @@ export const formations = [
     titre: 'DIVALTO GRM GMAO',
     sousTitre: 'Gestion de la Maintenance',
     description: 'Gérez efficacement votre maintenance avec DIVALTO GRM/GMAO.',
-    image: divaltoImage,
+    image: divaltoGrmImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoGrmPdf,
     type: 'pdf'
   },
@@ -139,7 +145,7 @@ export const formations = [
     titre: 'DIVALTO Logistique – expédition',
     sousTitre: 'Module Logistique',
     description: 'Optimisez vos flux logistiques et vos expéditions.',
-    image: divaltoImage,
+    image: divaltoLogistiqueImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoLogistiquePdf,
     type: 'pdf'
   },
@@ -150,7 +156,7 @@ export const formations = [
     titre: 'DIVALTO Production',
     sousTitre: 'Module Production',
     description: 'Pilotez votre production avec les outils DIVALTO.',
-    image: divaltoImage,
+    image: divaltoProductionImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoProductionPdf,
     type: 'pdf'
   },
@@ -161,7 +167,7 @@ export const formations = [
     titre: 'DIVALTO Contrôle qualité',
     sousTitre: 'Module Qualité',
     description: 'Assurez la qualité de vos produits avec DIVALTO.',
-    image: divaltoImage,
+    image: divaltoQualiteImg, // Utilisez une image existante ou créez-en une
     pdf: divaltoQualitePdf,
     type: 'pdf'
   }
