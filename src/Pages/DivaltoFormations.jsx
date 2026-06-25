@@ -18,8 +18,6 @@ const DivaltoFormations = () => {
 
       <section className="bg-[#F5F7FA] py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Toutes nos formations DIVALTO</h2>
-          <p className="text-gray-500 mb-8">Des formations spécialisées pour chaque module DIVALTO.</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {divaltoFormations.map((formation) => (
