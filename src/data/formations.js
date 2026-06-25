@@ -13,6 +13,13 @@ import portugaisPdf from '../assets/PDFs/PF-Portugais_VERSION_2026.pdf';
 import rgpdPdf from '../assets/PDFs/PF_RGPD_VERSION_2026.pdf';
 import managementPdf from '../assets/PDFs/MANAGEMENT-niveau-1-EXPERT.pdf';
 import fleSportifPdf from '../assets/PDFs/FLE-FOOT.pdf';
+import duerpPdf from '../assets/PDFs/PF_DUERP_2026.pdf';
+import divaltoAchatPdf from '../assets/PDFs/PF_DIVALTO-ACHAT.pdf';
+import divaltoVentePdf from '../assets/PDFs/PF_DIVALTO-VENTE.pdf';
+import divaltoGrmPdf from '../assets/PDFs/PF_DIVALTO-GRM-GMAO.pdf';
+import divaltoLogistiquePdf from '../assets/PDFs/PF_DIVALTO-LOGISTIQUE-EXPEDITION.pdf';
+import divaltoProductionPdf from '../assets/PDFs/PF_DIVALTO-PRODUCTION.pdf';
+import divaltoQualitePdf from '../assets/PDFs/PF_DIVALTO-QUALITE-CONTROLE.pdf';
 
 export const formations = [
   {
@@ -45,7 +52,7 @@ export const formations = [
     sousTitre: 'Document Unique',
     description: 'Évaluez et prévenez les risques dans votre entreprise.',
     image: duerpImage,
-    pdf: null,
+    pdf: duerpPdf,
     type: 'pdf'
   },
   {
@@ -91,7 +98,74 @@ export const formations = [
     image: divaltoImage,
     pdf: null,
     type: 'page'
+    },
+    {
+    id: 8,
+    slug: 'divalto-achat',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO Achat',
+    sousTitre: 'Module Achat',
+    description: 'Maîtrisez les fonctionnalités du module Achat de DIVALTO.',
+    image: divaltoImage, // Utilisez une image existante ou créez-en une
+    pdf: divaltoAchatPdf,
+    type: 'pdf'
+  },
+  {
+    id: 9,
+    slug: 'divalto-vente',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO Vente',
+    sousTitre: 'Module Vente',
+    description: 'Optimisez votre processus de vente avec DIVALTO.',
+    image: divaltoImage,
+    pdf: divaltoVentePdf,
+    type: 'pdf'
+  },
+  {
+    id: 10,
+    slug: 'divalto-grm',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO GRM GMAO',
+    sousTitre: 'Gestion de la Maintenance',
+    description: 'Gérez efficacement votre maintenance avec DIVALTO GRM/GMAO.',
+    image: divaltoImage,
+    pdf: divaltoGrmPdf,
+    type: 'pdf'
+  },
+  {
+    id: 11,
+    slug: 'divalto-logistique',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO Logistique – expédition',
+    sousTitre: 'Module Logistique',
+    description: 'Optimisez vos flux logistiques et vos expéditions.',
+    image: divaltoImage,
+    pdf: divaltoLogistiquePdf,
+    type: 'pdf'
+  },
+  {
+    id: 12,
+    slug: 'divalto-production',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO Production',
+    sousTitre: 'Module Production',
+    description: 'Pilotez votre production avec les outils DIVALTO.',
+    image: divaltoImage,
+    pdf: divaltoProductionPdf,
+    type: 'pdf'
+  },
+  {
+    id: 13,
+    slug: 'divalto-qualite',
+    categorie: 'DIVALTO',
+    titre: 'DIVALTO Contrôle qualité',
+    sousTitre: 'Module Qualité',
+    description: 'Assurez la qualité de vos produits avec DIVALTO.',
+    image: divaltoImage,
+    pdf: divaltoQualitePdf,
+    type: 'pdf'
   }
+  
 ];
 
-export const categories = ['Tous', 'Langues', 'Prévention des risques', 'Management', 'Informatique / ERP'];
+export const categories = ['Tous', 'Langues', 'Prévention des risques', 'Management', 'Informatique / ERP', 'DIVALTO'];

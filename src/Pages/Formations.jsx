@@ -6,8 +6,14 @@ import { getAllFormations, getAllCategories, getFormationsByCategory } from '../
 const Formations = () => {
   const [activeCategorie, setActiveCategorie] = useState('Tous');
   const allFormations = getAllFormations();
-  const categories = getAllCategories();
-  const filtered = getFormationsByCategory(activeCategorie);
+  
+  // Filtrer les catégories pour exclure "DIVALTO"
+  const categories = getAllCategories().filter(cat => cat !== 'DIVALTO');
+  
+  // Filtrer les formations : si "Tous" → exclure DIVALTO, sinon filtrer par catégorie
+  const filtered = activeCategorie === 'Tous' 
+    ? allFormations.filter(f => f.categorie !== 'DIVALTO') 
+    : getFormationsByCategory(activeCategorie);
 
   return (
     <>
