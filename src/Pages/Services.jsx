@@ -76,22 +76,22 @@ const Services = () => {
           <p className="text-gray-500 mb-8">Découvrez notre processus de formation.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex flex-col items-center text-center">
-              <span className="text-3xl font-bold text-[#4A6FB3]/30">01</span>
+              <span className="text-3xl font-bold text-[#4A6FB3]">01</span>
               <h3 className="font-bold mb-2">Prise de contact</h3>
               <p className="text-sm text-gray-500">Nous vous contactons pour comprendre vos besoins.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <span className="text-3xl font-bold text-[#4A6FB3]/30">02</span>
+              <span className="text-3xl font-bold text-[#4A6FB3]">02</span>
               <h3 className="font-bold mb-2">Analyse des besoins</h3>
               <p className="text-sm text-gray-500">Nous analysons vos besoins et définissons le programme.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <span className="text-3xl font-bold text-[#4A6FB3]/30">03</span>
+              <span className="text-3xl font-bold text-[#4A6FB3]">03</span>
               <h3 className="font-bold mb-2">Mise en place</h3>
               <p className="text-sm text-gray-500">Nous mettons en place le programme de formation.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <span className="text-3xl font-bold text-[#4A6FB3]/30">04</span>
+              <span className="text-3xl font-bold text-[#4A6FB3]">04</span>
               <h3 className="font-bold mb-2">Suivi & évaluation</h3>
               <p className="text-sm text-gray-500">Nous suivons et évaluons les progrès.</p>
             </div>
