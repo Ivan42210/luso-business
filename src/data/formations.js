@@ -7,7 +7,7 @@ export const formations = [
     sousTitre: 'Français Langue Étrangère',
     description: 'Développez les compétences en français de vos équipes.',
     image: 'src\\assets\\Photos\\FLE.png',
-    pdf: '/PDFs/formations/PF-FLE_VERSION_2026.pdf',
+    pdf: 'src\\assets\\PDFs\\PF-FLE_VERSION_2026.pdf',
     type: 'pdf'
   },
   {
@@ -40,7 +40,7 @@ export const formations = [
     sousTitre: 'Protection des données',
     description: 'Mettez votre entreprise en conformité avec le RGPD.',
     image: 'src\\assets\\Photos\\RGPD.png',
-    pdf: '/PDFs/formations/PF_RGPD_VERSION_2026.pdf',
+    pdf: 'src\\assets\\PDFs\\PF_RGPD_VERSION_2026.pdf',
     type: 'pdf'
   },
   {
@@ -62,7 +62,7 @@ export const formations = [
     sousTitre: '',
     description: 'Des formations spécifiques pour le secteur sportif.',
     image: 'src\\assets\\Photos\\fle-football.png',
-    pdf: '/PDFs/formations/FLE-FOOT.pdf',
+    pdf: 'src\\assets\\PDFs\\formations\\FLE-FOOT.pdf',
     type: 'pdf'
   },
   {
