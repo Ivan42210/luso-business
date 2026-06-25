@@ -1,6 +1,6 @@
 // Imports des images
 import fleImage from '../assets/Photos/FLE.png';
-import portugaisImage from '../assets/Photos/portugais.jpg';
+import portugaisImage from '../assets/Photos/Portugais.jpg';
 import duerpImage from '../assets/Photos/DUERP.png';
 import rgpdImage from '../assets/Photos/RGPD.png';
 import managementImage from '../assets/Photos/management.png';

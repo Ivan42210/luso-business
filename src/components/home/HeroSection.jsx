@@ -1,5 +1,5 @@
-import HeroImage from '../../assets/Photos/hero.png';
-import LogoQualiopi from '../../assets/Photos/logo qualiopi.png';
+import HeroImage from '../../assets/Photos/Hero.png';
+import LogoQualiopi from '../../assets/Photos/logo-qualiopi.png';
 
 const HeroSection = () => {
   const badgeText = "Organisme de formation certifié Qualiopi";
